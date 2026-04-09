@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>pickup-request</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="keywords" content="Harit Sena, Green Army, Environmental Organization, Tree Plantation, Eco Club, Forest Conservation, Sustainability, Nashik, India, Go Green">
+    <meta content="Harit Sena (Green Army) is a volunteer-driven environmental movement focused on tree plantation, forest conservation, and spreading awareness about sustainable living. Join us in building a greener future." name="description">
+
+    <!-- Favicon -->
+    <link href="img/harit_sena_logo.png" rel="icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Grotesk&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/pick-req.css" rel="stylesheet">
+</head>
+
+<body>
+
+<a href="index.html" class="back-btn">
+    <i class="bi bi-arrow-left"></i>
+</a>
+
+<div class="form-container">
+    <h2>Request Waste Pickup</h2>
+
+    <form method="POST" action="submit_request">
+        <!-- Django CSRF (if using Django) -->
+        <!-- {% csrf_token %} -->
+
+        <div class="row">
+
+            <!-- Waste Type -->
+         <div class="col-12">
+             <label class="mb-2">Select Waste Type (Multiple allowed)</label>
+
+            <div class="d-flex gap-2 flex-wrap">
+
+                <input type="checkbox" class="btn-check" id="plastic" autocomplete="off">
+                <label class="btn btn-outline-success flex-fill text-center" for="plastic">Plastic</label>
+
+                <input type="checkbox" class="btn-check" id="wet" autocomplete="off">
+                <label class="btn btn-outline-success flex-fill text-center"  for="wet">Wet</label>
+
+                <input type="checkbox" class="btn-check" id="paper" autocomplete="off">
+                <label class="btn btn-outline-success flex-fill text-center" for="paper">Paper</label>
+
+                <input type="checkbox" class="btn-check" id="ewaste" autocomplete="off">
+                <label class="btn btn-outline-success flex-fill text-center for="ewaste">E-Waste</label>
+
+            </div>
+         </div>
+
+
+
+
+
+      
+            <!-- Approx Weight -->
+            <div class="input-group">
+                <label>Approx Weight</label>
+                <select class="border" name="weight">
+                    <option>Select approx weight</option>
+                    <option>1-5 kg</option>
+                    <option>5-10 kg</option>
+                    <option>10-20 kg</option>
+                    <option>20-50 kg</option>
+                    <option>50+ kg</option>
+                </select>
+            </div>
+
+        </div> 
+
+        <!-- Address -->
+        <div class="input-group">
+            <label>Pickup Address</label>
+            <textarea class="border" name="address" required></textarea>
+        </div>
+
+        <div class="row">
+
+            <!-- Pickup Date -->
+            <div class="input-group">
+                <label>Pickup Date</label>
+                <input type="date" class="border date" name="pickup_date" required>
+            </div>
+
+            <!-- Phone -->
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input type="text" class="border" name="phone" required>
+            </div>
+
+        </div>
+
+        <!-- Name -->
+        <div class="input-group">
+            <label>Your Name</label>
+            <input type="text" class="border" name="name">
+        </div>
+
+        <!-- Email -->
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" class="border" name="email">
+        </div>
+
+        <!-- Preferred Pickup Time -->
+        <div class="input-group">
+            <label>Preferred Pickup Time</label>
+            <select class="border" name="pickup_time">
+                <option>Morning (8AM - 12PM)</option>
+                <option>Afternoon (12PM - 4PM)</option>
+                <option>Evening (4PM - 8PM)</option>
+            </select>
+        </div>
+
+        <!-- Additional Message -->
+        <div class="input-group">
+            <label>Additional Message</label>
+            <textarea class="border" name="message"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-success w-100">
+            <a href="{% url 'index'%}"></a>
+              Request Pickup
+        </button>
+
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

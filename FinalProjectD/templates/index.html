@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Harit Sena - Green Army for a Greener Future</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="keywords" content="Harit Sena, Green Army, Environmental Organization, Tree Plantation, Eco Club, Forest Conservation, Sustainability, Nashik, India, Go Green">
+    <meta content="Harit Sena (Green Army) is a volunteer-driven environmental movement focused on tree plantation, forest conservation, and spreading awareness about sustainable living. Join us in building a greener future." name="description">
+
+    <!-- Favicon -->
+    <link href="img/harit_sena_logo.png" rel="icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Grotesk&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-success" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light border-bottom border-2 border-white">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-success fw-bold">Harit Sena</h1>
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>                            
+                        <a href="Leaderboard.html" class="nav-item nav-link">Rewards</a>                                                                                    
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <div class="nav-item dropdown">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle fs-4"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accountDropdown">
+                                <li><a class="dropdown-item" href="Login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="register.html">Sign Up</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="Profile.html">Profile</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid pb-5 hero-header bg-light mb-5">
+        <div class="container">
+            <div class="row g-5 align-items-center mb-5">
+
+                <!-- Half part start -->
+                <div class="col-lg-6">
+                    <div class="wow fadeIn" data-wow-delay="0.3s">
+                        <h1 class="display-4 fw-bold mb-2 animated slideInRight text-success">Together for a <span style="color:#1B5E20";>Greener Future</span></h1>
+                        <h5 class="d-inline-block border border-2 border-success py-3 px-4 mb-2 animated slideInRight" style="background-color:#ffffffa8";>
+                        Join Harit Sena &ndash; The Green Army of Clean India</h5>
+
+                        <!-- PickupRequest form start -->
+                        <!-- <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" name="name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email" name="email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                            <option selected disabled>Select the type of waste</option>
+                                            <option value="plastic">Plastic waste</option>
+                                            <option value="wet">Wet waste</option>
+                                            <option value="paper">Paper/Cardboard waste</option>
+                                            <option value="e-waste">E-waste</option>
+                                        </select>
+                                        <label for="floatingSelect">Type of waste</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                            <option selected disabled>Select the weight of waste</option>
+                                            <option value="2kg">2 kg</option>
+                                            <option value="4kg">4 kg</option>
+                                            <option value="6kg">6 kg</option>
+                                            <option value="8kg">8 kg</option>
+                                        </select>
+                                        <label for="floatingSelect">Weight of waste</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message" name="message"
+                                            style="height: 100px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Request a pickup</button>
+                                </div>
+                            </div>
+                        </form> -->
+                        <!-- PickupRequest form end -->
+
+                        <!-- Impact -->
+                        <div class="impact-box">
+
+                            <h3>🌍 Our Impact</h3>
+
+                            <div class="stats">
+                                <div class="stat">
+                                    <h2>1200+</h2>
+                                    <p>Kg Waste Collected</p>
+                                </div>
+
+                                <div class="stat">
+                                    <h2>320+</h2>
+                                    <p>Pickups Completed</p>
+                                </div>
+
+                                <div class="stat">
+                                    <h2>85+</h2>
+                                    <p>Volunteers Joined</p>
+                                </div>
+                            </div>
+
+                            <!-- <div class="cta-buttons">
+                                <a href="Login.html">
+                                    <button class="btn impact-btn primary" id="log-in">Log in</button>
+                                </a>
+
+                                <a href="register.html">
+                                    <button class="btn impact-btn secondary" id="sign-up">Sign up</button>
+                                </a>
+                        
+                            </div> -->
+                            <div>
+                                 <a href="pick-req.html">
+                                    <button class="btn impact-btn primary" id="log-in">Request A Pickup</button>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Half part slider start -->
+                <div class="col-lg-6">
+                    <div class="owl-carousel header-carousel animated fadeIn">
+                        <img class="img-fluid rounded-3" src="img/Img1.png" alt="">
+                        <img class="img-fluid rounded-3" src="img/Img2.png" alt="">
+                        <img class="img-fluid rounded-3" src="img/Img3.png" alt="">
+                    </div>
+                </div>
+                <!-- Half part slider end -->
+            </div>
+
+            <!-- Types of waste start -->
+            <!-- <div class="row g-5 animated fadeIn"> -->
+                <!-- Plastic Waste -->
+                <!-- <div class="col-md-6 col-lg-3 text-center">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="flex-shrink-0 btn-square border border-2 border-success mb-3">
+                            <i class="fa fa-recycle text-success fa-lg"></i>
+                        </div>
+                        <h5 class="lh-base mb-2">Plastic Waste</h5>
+                        <p class="text-muted small mb-0">
+                            Recycle bottles, wrappers, and containers responsibly to reduce pollution.
+                        </p>
+                    </div>
+                </div> -->
+                <!-- Wet Waste -->
+                <!-- <div class="col-md-6 col-lg-3 text-center">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="flex-shrink-0 btn-square border border-2 border-success mb-3">
+                            <i class="fa fa-leaf text-success fa-lg"></i>
+                        </div>
+                        <h5 class="lh-base mb-2">Wet Waste</h5>
+                        <p class="text-muted small mb-0">
+                            Compost kitchen and garden waste to create organic fertilizer.
+                        </p>
+
+                    </div>
+                </div> -->
+                <!-- Bulk Waste -->
+                <!-- <div class="col-md-6 col-lg-3 text-center">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="flex-shrink-0 btn-square border border-2 border-success mb-3">
+                            <i class="fa fa-dumpster text-success fa-lg"></i>
+                        </div>
+                        <h5 class="lh-base mb-2">Bulk Waste</h5>
+                        <p class="text-muted small mb-0">
+                            Safe collection of furniture, mattresses, and large household debris.
+                        </p>
+                    </div>
+                </div> -->
+                <!-- Commercial Waste -->
+                <!-- <div class="col-md-6 col-lg-3 text-center">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="flex-shrink-0 btn-square border border-2 border-success mb-3">
+                            <i class="fa fa-building text-success fa-lg"></i>
+                        </div>
+                        <h5 class="lh-base mb-2">Commercial Waste</h5>
+                        <p class="text-muted small mb-0">
+                            Pickup for offices and shops ensuring proper disposal and recycling.
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Types of waste -->
+
+            <h2>Areas We Serve</h2>
+
+            <div class="services">
+
+            <div class="card">
+                <i class="fa-solid fa-building fs-1 text-success"></i>
+                <h3>Residential Societies</h3>
+                <p>Doorstep waste collection for apartments and housing societies.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-school fs-1 text-success"></i>
+                <h3>Schools & Colleges</h3>
+                <p>Waste management and awareness programs for students.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-building fs-1 text-success"></i>
+                <h3>Offices & IT Parks</h3>
+                <p>Scheduled waste collection for corporate environments.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-road fs-1 text-success"></i>
+                <h3>Public Streets</h3>
+                <p>Support for clean and green public spaces.</p>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+
+                <!-- Left Side Images + Points -->
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <!-- Image 1 -->
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="what-we-do">
+                                <img class="img-fluid rounded" src="img/Community waste.png" alt="Waste Collection Image">
+                            </div>
+                        </div>
+                        <!-- Image 2 -->
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="what-we-do">
+                                <img class="img-fluid rounded" src="img/Leaderboard.png" alt="Community Drive Image">
+                            </div>
+                        </div>
+
+                        <!-- Points (below images) -->
+                        <div class="row mt-3">
+                        <div class="col-sm-6">
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Waste Pickup Requests</h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Rewards & Leaderboard</h6>
+                        </div>
+                        <div class="col-sm-6">
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Segregation Awareness</h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Volunteer Opportunities</h6>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side Text -->
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="mb-5"><span class="text-uppercase text-success bg-light px-2">What We Do</span> Turning Waste Management into a Rewarding Habit</h1>
+
+                    <p class="mb-4">At <strong>Harit Sena</strong>, we make waste management simple, responsible, and rewarding.</p>
+
+                    <p class="mb-4">pickup for their segregated waste directly from our website. Our team ensures each type — plastic, wet, bulk, or commercial — is collected responsibly and sent for proper recycling or processing.</p>
+
+                    <p class="mb-4">We encourage segregation through incentives and rewards. Citizens earn points based on the quality of segregation and weight of the waste, and their efforts are recognized on a community leaderboard.</p>
+
+                    <p class="mb-4">Along with waste collection, Harit Sena regularly organizes awareness campaigns and community drives to promote environmental responsibility and sustainable living among citizens.</p>
+                    
+                    <!-- Buttons -->
+                    <div class="d-flex align-items-center mt-5">
+                        <a class="btn btn-success px-4 me-2" href="#!">Read More</a>
+                        <a class="btn btn-outline-success btn-square border-2 me-2" href="#!"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-success btn-square border-2 me-2" href="#!"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-success btn-square border-2 me-2" href="#!"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-success btn-square border-2" href="#!"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Why choose us Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+
+            <div class="text-center wow fadeIn" data-wow-delay="0.1s">
+                <h1 class="mb-5">Why People <span class="text-uppercase text-primary bg-light px-2">Choose Harit Sena</span>
+                </h1>
+            </div>
+
+            <div class="row g-5 align-items-center text-center">
+                <!-- Point 1 -->
+                <div class="col-md-6 col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <i class="fa fa-leaf fa-5x text-primary mb-4"></i>
+                    <h4>Strong Environmental Commitment</h4>
+                    <p class="mb-0">Harit Sena has been dedicated to building a sustainable future through tree plantation, water conservation, and awareness drives that inspire real change</p>
+                </div>
+
+                <!-- Point 2 -->
+                <div class="col-md-6 col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                    <i class="fa fa-users fa-5x text-primary mb-4"></i>
+                    <h4>Community-Driven Movement</h4>
+                    <p class="mb-0">We promote eco-friendly practices, waste reduction, and environmental education to create long-term awareness and greener lifestyles.</p>
+                </div>
+
+                <!-- Point 3 -->
+                <div class="col-md-6 col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <i class="fa fa-handshake fa-5x text-primary mb-4"></i>
+                    <h4>Collaborative Efforts</h4>
+                    <p class="mb-0">We partner with local organizations, schools, and environmental bodies to ensure that every project leads to meaningful, long-lasting results</p>
+                </div>
+
+                <!-- Point 4 -->
+                <div class="col-md-6 col-lg-6 wow fadeIn" data-wow-delay="0.1s">                    <i class="fa fa-award fa-5x text-primary mb-4"></i>
+                    <h4>Rewards & Recognition</h4>
+                    <p class="mb-0">Our leaderboard system motivates volunteers with points, certificates, and appreciation for their contributions</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Why choose us End -->
+
+
+    <!-- Our Initiatives start -->
+    <div class="container-fluid mt-5">
+        <div class="container mt-5">
+            <div class="row g-0">
+
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column justify-content-center bg-primary h-100 p-5">
+
+                        <h1 class="text-white mb-5">Our Latest <span
+                                class="text-uppercase text-primary bg-light px-2">Initiatives</span></h1>
+                        <h4 class="text-white mb-0"><span class="display-1">3</span> of our latest community drives</h4>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="row g-0">
+
+                        <!-- Initiative 1 -->
+                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.2s">
+                            <div class="project-item position-relative overflow-hidden">
+                                <img src="img/Tree-planting.png" class="img-fluid w-100" alt="Tree Plantation">
+                                <a class="project-overlay text-decoration-none" href="#!">
+                                    <h4 class="text-white">Tree Plantation</h4>
+                                    <!-- <small class="text-white">120 Trees Planted</small> -->
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Initiative 2 -->
+                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="project-item position-relative overflow-hidden">
+                                <img src="img/clean-up.png" class="img-fluid w-100" alt="Clean Up">
+                                <a class="project-overlay text-decoration-none" href="#!">
+                                    <h4 class="text-white">Clean-Up Drive</h4>
+                                    <!-- <small class="text-white">85 Areas Cleaned</small> -->
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Initiative 3 -->
+                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.4s">
+                            <div class="project-item position-relative overflow-hidden">
+                                <img class="img-fluid w-100 h-50" src="img/Plastic-campaign.png" alt="Plastic-Free Campaign">
+                                <a class="project-overlay text-decoration-none" href="#!">
+                                    <h4 class="text-white">Plastic-Free Campaign</h4>
+                                    <!-- <small class="text-white">200 Participants</small> -->
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- Our Initiatives end -->
+
+
+    <!-- Environmental Services Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+
+                    <h1 class="mb-5">Our <span
+                            class="text-uppercase text-primary bg-light px-2">Environmental Services</span></h1>
+                    <p>Harit Sena works to create a cleaner and greener community by promoting waste segregation and reducing plastic use. Through awareness programs and local initiatives, we encourage responsible environmental habits.</p>
+                    <p class="mb-5">To boost participation, we offer a Green Rewards Program and a Volunteer Leaderboard. Volunteers earn points for their efforts and gain recognition for making a positive environmental impact.</p>
+                    <div class="d-flex align-items-center bg-light">
+                        <div class="btn-square flex-shrink-0 bg-primary" style="width: 100px; height: 100px;">
+                            <i class="fa-solid fa-envelope text-white"></i>
+                        </div>
+                        <div class="px-3">
+                            <h4>haritsena2325@gmail.com</h4>
+                            <span>Email us direct 24/7 for Environmental Guidance</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="row g-0">
+                        <!-- Environmental Service 1 -->
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.2s">
+                            <div class="service-item h-100 d-flex flex-column justify-content-center bg-primary">
+                                <a href="#!" class="service-img position-relative mb-4">
+                                    <img class="img-fluid w-100" src="img/Waste segregation.png" alt="">
+                                    <h5>Waste Segregation<br>Awareness</h5>
+                                </a>
+                                <p class="mb-0">Promoting proper waste segregation for a cleaner environment.</p>
+                            </div>
+                        </div>
+
+                        <!-- Environmental Service 2 -->
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.4s">
+                            <div class="service-item h-100 d-flex flex-column justify-content-center bg-light">
+                                <a href="#!" class="service-img position-relative mb-4">
+                                    <img class="img-fluid w-100" src="img/Plastic-free campaign.png" alt="">
+                                    <h5>Plastic-Free<br>Campaign</h5>
+                                </a>
+                                <p class="mb-0">Encouraging reduction of single-use plastics.</p>
+                            </div>
+                        </div>
+
+                        <!-- Environmental Service 3 -->
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.6s">
+                            <div class="service-item h-100 d-flex flex-column justify-content-center bg-light">
+                                <a href="#!" class="service-img position-relative mb-4">
+                                    <img class="img-fluid w-100" src="img/Green rewards.png" alt="">
+                                    <h5>Green Rewards</h5>
+                                </a>
+                                <p class="mb-0">Earn points and recognition for eco-friendly actions.</p>
+                            </div>
+                        </div>
+
+                        <!-- Environmental Service 4 -->
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.8s">
+                            <div class="service-item h-100 d-flex flex-column justify-content-center bg-primary">
+                                <a href="#!" class="service-img position-relative mb-4">
+                                    <img class="img-fluid w-100" src="img/Leaderboard service.png" alt="">
+                                    <h5>Leaderboard</h5>
+                                </a>
+                                <p class="mb-0">Highlighting top contributors to inspire participation.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Environmental Services End -->
+
+
+
+    <!-- Reviews Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-9">
+                    <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.2s">
+
+                        <!-- Review 1 -->
+                        <div class="testimonial-item">
+                            <div class="row g-5 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="testimonial-img">
+                                        <img class="img-fluid" src="img/Priya-mehta.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="testimonial-text pb-5 pb-md-0">
+                                        <h3>Clean Living Initiative</h3>
+                                        <p>Harit Sena made waste segregation so easy in our society. The Green Rewards system keeps everyone motivated!</p>
+                                        <h5 class="mb-0">Priya Mehta</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="testimonial-item">
+                            <div class="row g-5 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="testimonial-img">
+                                        <img class="img-fluid" src="img/Rohan-kulkarni.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="testimonial-text pb-5 pb-md-0">
+                                        <h3>Sustainable Habits</h3>
+                                        <p>The reward system truly changed our daily habits. Proud to be part of this movement.</p>
+                                        <h5 class="mb-0">Rohan Kulkarni</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 3 -->
+                        <div class="testimonial-item">
+                            <div class="row g-5 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="testimonial-img">
+                                        <img class="img-fluid" src="img/Sneha.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="testimonial-text pb-5 pb-md-0">
+                                        <h3>Inspiring Green Action</h3>
+                                        <p>The leaderboard feature encourages healthy competition while helping the environment. Amazing initiative!</p>
+                                        <h5 class="mb-0">Sneha Patil</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Reviews End -->
+
+
+    <!-- Certificate Start -->
+    <div class="container-fluid bg-primary newsletter p-0">
+        <div class="container p-0">
+            <div class="row g-0 align-items-center">
+
+                <!-- Certificate -->
+                <div class="col-md-5 ps-lg-0 text-start wow fadeIn" data-wow-delay="0.2s">
+                    <img class="img-fluid w-100 m-4"  src="img/harit-sainik.png" alt="">
+                </div>
+
+                <!-- Start your journey -->
+                <div class="col-md-7 py-5 newsletter-text wow fadeIn text-center" data-wow-delay="0.5s">
+                    <div class="p-5">
+                        <h1 class="mb-5">Become the <br><span
+                                class="text-uppercase text-primary bg-white px-2">HARIT SAINIK</span></h1>
+
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <!-- Fix Register form dimentions -->
+                            <a href="register.html">
+                                <button class="btn btn-primary btn-lg" type="button">Start your journey</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Certificate End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <a href="index.html" class="d-inline-block mb-3">
+                        <h1 class="text-white">HARIT SENA</h1>
+                    </a>
+                    <p class="mb-0"></p>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="text-white mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>GK AARKCON, Gaikwad Nagar, Punawale, Pune</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+91 9774948729</p>
+                    <p><i class="fa fa-envelope me-3"></i>haritsena2325@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">Popular Link</h5>
+                    <a class="btn btn-link" href="#!">About Us</a>
+                    <a class="btn btn-link" href="#!">Contact Us</a>
+                    <a class="btn btn-link" href="#!">Privacy Policy</a>
+                    <a class="btn btn-link" href="#!">Terms & Condition</a>
+                    <a class="btn btn-link" href="#!">Initiatives</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <a class="btn btn-link" href="#!">♻️ Waste Collection</a>
+                    <a class="btn btn-link" href="#!">🏆 Reward Program</a>
+                    <a class="btn btn-link" href="#!">🌱 Tree Plantation</a>
+                    <a class="btn btn-link" href="#!">📜 Volunteer Certification</a>
+                    <a class="btn btn-link" href="#!">🧹 Cleanliness Drives</a>
+                    <a class="btn btn-link" href="#!">📢 Awareness Campaigns</a>
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#!">HARIT SENA</a>, All Right Reserved.
+
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>. Distributed by
+                        <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="#!">Home</a>
+                            <a href="#!">Cookies</a>
+                            <a href="#!">Help</a>
+                            <a href="#!">FAQs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#!" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

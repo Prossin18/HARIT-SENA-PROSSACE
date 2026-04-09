@@ -1,0 +1,228 @@
+body {
+    font-family: Arial;
+    background-image: linear-gradient(-225deg, #fffeff 0%, #d7ffe6 100%);
+}
+
+/* Form Container */
+.form-container {
+    width: 700px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Row */
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+/* Input Group */
+.input-group, .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Inputs */
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Textarea */
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1c6b5d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #145046;
+}
+
+/* Border class FIX */
+.border {
+    border: 2px solid #1c6b5d;
+}
+
+/* Back arrow */
+i {
+    font-size: 30px;
+}
+
+/* Remove Bootstrap dropdown arrow */
+.dropdown-toggle::after {
+    display: none;
+}
+
+/* Select arrow remove */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* Custom select wrapper */
+.custom-select-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.custom-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-right: 30px;
+}
+
+.custom-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .form-container {
+        width: 95%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+} 
+.dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-menu {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.dropdown-menu li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.dropdown-menu li {
+    padding: 5px 0;
+}
+
+.dropdown-menu label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/* Dropdown Fix */
+.dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-menu {
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+/* Waste Type Items */
+.dropdown-menu li {
+    list-style: none;
+    margin-bottom: 6px;
+}
+
+/* Checkbox + Text alignment */
+.waste-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.waste-item input {
+    margin: 0;
+}
+
+.waste-item span {
+    line-height: 1.2;
+}
+
+.dropdown-menu {
+    width: 100%;          /* Match the button width */
+    max-height: 200px;    /* Fixed height for scroll */
+    overflow-y: auto;     /* Scroll when too many items */
+    padding: 10px;        /* Some spacing */
+}
+.dropdown-menu li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;   /* Space between items */
+}
+.dropdown-menu input[type="checkbox"] {
+    margin-right: 10px;   /* Space between checkbox and text */
+}
+.btn-outline-success {
+  color: #198754;
+  border-color: #198754;
+  background-color: transparent;
+}
+
+/*  on Hover green remove */
+.btn-outline-success:hover {
+  background-color: transparent;
+  color: #198754;
+  border-color: #198754;
+}
+
+/* on Click (checked)  green */
+.btn-check:checked + .btn-outline-success {
+  background-color: #198754;
+  color: white;
+  border-color: #198754;
+}

@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Harit Sena - Green Army for a Greener Future</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="keywords" content="Harit Sena, Green Army, Environmental Organization, Tree Plantation, Eco Club, Forest Conservation, Sustainability, Nashik, India, Go Green">
+    <meta content="Harit Sena (Green Army) is a volunteer-driven environmental movement focused on tree plantation, forest conservation, and spreading awareness about sustainable living. Join us in building a greener future." name="description">
+
+    <!-- Favicon -->
+    <link href="img/harit_sena_logo.png" rel="icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Grotesk&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Rewards Stylesheet -->
+    <link href="css/rewards.css" rel= "stylesheet">
+
+    <!-- Leaderboard Stylesheet -->
+    <link href="css/leaderboard.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-success" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light border-bottom border-2 border-white">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-success fw-bold">Harit Sena</h1>
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>                            
+                        <a href="Leaderboard.html" class="nav-item nav-link active">Rewards</a>                                                                                    
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <div class="nav-item dropdown">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle fs-4"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accountDropdown">
+                                <li><a class="dropdown-item" href="Login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="Signup.html">Sign Up</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="Profile.html">Profile</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid pb-5 hero-header bg-light mb-5">
+        <div class="page_title scetion-padding">
+            <div class="container">
+                <!-- Rewards Start -->
+                    <!-- Ecopoints heading  -->
+                    <div class="text-white text-center p-5 eco-leader">
+                        <h1> &#127793; EcoPoints</h1>
+                        <p>Earn rewards &#127873; by contributing to a greener future</p>
+                    </div>
+
+                    <!-- Your EcoPoints -->
+                    <div class="container text-center my-5">
+                        <h2>Your EcoPoints</h2>
+                        <h1 class="text-success" id="ecoPoints">0 &#127793;</h1>
+                    </div>
+
+                    <hr>
+
+                    <!-- How to earn EcoPoints -->
+                    <div class="container my-5">
+                        <h3 class="mb-4">How to <span class="text-uppercase text-success bg-light px-2">Earn EcoPoints</span></h3>
+                        <div class="row text-center">
+
+                            <!-- Step 1 -->
+                            <div class="col-md-3">
+                                <h5>♻️ Segregate Waste</h5>
+                                <p>Properly separate waste by type</p>
+                            </div>
+
+                            <!-- Step 2 -->
+                            <div class="col-md-3">
+                                <h5>🚛 Request Pickup</h5>
+                                <p>Schedule waste collection</p>
+                            </div>
+
+                            <!-- Step 3 -->
+                            <div class="col-md-3">
+                                <h5>⚖️ Waste Weight</h5>
+                                <p>More weight = more EcoPoints</p>
+                            </div>
+
+                            <!-- Step 4 -->
+                            <div class="col-md-3">
+                                <h5>⭐ Monthly Bonus</h5>
+                                <p>Extra points for consistency.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <hr>
+                    
+                    <!-- Claimed Rewards  -->
+                    <div class="d-flex justify-content-between">
+                         <h2>Exciting Rewards &#127873; for You</h2>
+                         <!-- Claimed Rewards LINK -->
+                         <a href="Claimedrewards.html">
+                            <button type="button" class="btn btn-success ms-3">Claimed Rewards</button>
+                         </a>
+                    </div>
+
+                    <hr>
+
+                    <!-- Redeem your rewards -->
+                    <div class="container my-5">
+                        <h3 class="mb-4">Redeem Your Rewards  &#127873; </h3>
+                    </div>
+
+                    <!-- EcoPoints: 15 - 50 -->
+                        <div class="d-flex justify-content-between">
+                            <h4>&#127793; EcoPoints: 15 - 50</h4>
+
+                            <!-- Progress bar  -->
+                            <!-- <div class="progress-container">
+                                <div class="progress-text">
+                                    <span>Your Points: 12 / 50</span>
+                                    <span>24%</span>
+                                </div>
+
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 24%;"></div>
+                                </div>
+                            </div> -->
+
+                            <button type="button" class="btn btn-success ms-3">View all</button>
+                        </div>
+                        <!-- Rewards slider for EcoPoints: 15 - 50 -->
+                        <div class="slider-container">
+                            <!-- SlideLeft Button -->
+                            <button class="slider-btn left" onclick="slideLeft()">&#10094;</button>
+                            <!-- Reward Slider -->
+                            <div class="slider" id="slider">
+                                <!-- Reward 1 -->
+                                <div class="card">
+                                    <img src="img/plant_sapling.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#Reward1">
+                                                <i class="bi bi-lock"></i> Earn <!-- <span>{{ reward.points_needed }}</span> --> more points
+                                            </button>
+                                            
+                                        </div>
+                                </div>
+                                <div class="modal fade" id="Reward1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Plant Sapling</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 1 on clicking the trigger button modal-->
+                                                        <div class="modal-body"> 
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <!-- Left Image -->
+                                                                    <div class="col-md-5 text-center">
+                                                                        <img src="img/plant_sapling.png" class="img-fluid rounded" alt="">
+                                                                    </div>
+
+                                                                    <!-- Right Content -->
+                                                                     <div class="col-md-7">
+                                                                        <h5>&#127793; 15 Ecopoints</h5>
+
+                                                                        <h6 class="mt-3 fw-bold">About the reward</h6>
+                                                                        <p>
+                                                                            Redeem this reward to get a plant sapling and contribute to a greener environment.
+                                                                        </p>
+                                                                        <h6>Key Terms & conditions</h6>
+                                                                        <ul>
+                                                                            <li>Valid for one-time redemption</li>
+                                                                            <li>Cannot be exchanged for cash</li>
+                                                                            <li>Subject to availability</li>
+                                                                        </ul>
+
+                                                                        <a href="#" class="text-primary">Read Terms & Conditions</a>
+
+                                                                        <!-- <span>{{ reward.points_needed }}</span> is used for the points needed to earn. Using django  -->
+                                                                        <p class="text-muted mt-2">
+                                                                            Earn <!-- <span>{{ reward.points_needed }}</span> --> more points to unlock this reward
+                                                                        </p>
+                                                                        <button class="btn btn-secondary w-100 mt-3" disabled>
+                                                                            <i class="bi bi-lock"></i> Earn Points
+                                                                        </button>
+
+                                                                     </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Claim</button>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                </div>
+                                <!-- Reward 1 end -->
+
+                                <!-- Reward 2 -->
+                                <div class="card">
+                                    <img src="img/garbage.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#Reward2">
+                                                <i class="bi bi-lock"></i> Earn <!-- <span>{{ reward.points_needed }}</span> --> more points
+                                            </button>
+                                        </div>
+                                </div>
+                                <div class="modal fade" id="Reward2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">10 Garbage bags</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 2 on clicking the trigger button modal-->
+                                                        <div class="modal-body"> 
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <!-- Left Image -->
+                                                                    <div class="col-md-5 text-center">
+                                                                        <img src="img/garbage.png" class="img-fluid rounded" alt="">
+                                                                    </div>
+
+                                                                    <!-- Right Content -->
+                                                                     <div class="col-md-7">
+                                                                        <h5>&#127793; 25 Ecopoints</h5>
+
+                                                                        <h6 class="mt-3 fw-bold">About the reward</h6>
+                                                                        <p>
+                                                                            Redeem this reward to receive a pack of durable garbage bags and help keep your surroundings clean and pollution-free. Small actions like proper waste disposal can make a big difference for a greener environment.
+                                                                        </p>
+                                                                        <h6>Key Terms & conditions</h6>
+                                                                        <ul>
+                                                                            <li>Valid for one-time redemption</li>
+                                                                            <li>Cannot be exchanged for cash</li>
+                                                                            <li>Subject to availability</li>
+                                                                            <li>For personal/community cleanliness use</li>
+                                                                        </ul>
+
+                                                                        <a href="#" class="text-primary">Read Terms & Conditions</a>
+
+                                                                        <!-- <span>{{ reward.points_needed }}</span> is used for the points needed to earn. Using django  -->
+                                                                        <p class="text-muted mt-2">
+                                                                            Earn <!-- <span>{{ reward.points_needed }}</span> --> more points to unlock this reward
+                                                                        </p>
+                                                                        <button class="btn btn-secondary w-100 mt-3" disabled>
+                                                                            <i class="bi bi-lock"></i> Earn Points
+                                                                        </button>
+
+                                                                     </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Claim</button>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                </div>
+                                <!-- Reward 2 end -->
+
+                                <!-- Reward 3 -->
+                                <div class="card">
+                                    <img src="img/Eco_bamboo.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#Reward3">
+                                                <i class="bi bi-lock"></i> Earn <!-- <span>{{ reward.points_needed }}</span> --> more points
+                                            </button>
+                                        </div>
+                                </div>
+                                <div class="modal fade" id="Reward3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Bamboo Straws Set</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 2 on clicking the trigger button modal-->
+                                                        <div class="modal-body"> 
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <!-- Left Image -->
+                                                                    <div class="col-md-5 text-center">
+                                                                        <img src="img/Eco_bamboo.png" class="img-fluid rounded" alt="">
+                                                                    </div>
+
+                                                                    <!-- Right Content -->
+                                                                     <div class="col-md-7">
+                                                                        <h5>&#127793; 35 Ecopoints</h5>
+
+                                                                        <h6 class="mt-3 fw-bold">About the reward</h6>
+                                                                        <p>
+                                                                            Redeem this reward to receive a reusable bamboo straw set made from natural, eco-friendly materials. Say goodbye to single-use plastic straws and take a small step towards a sustainable lifestyle
+                                                                        </p>
+                                                                        <h6>Key Terms & conditions</h6>
+                                                                        <ul>
+                                                                            <li>Valid for one-time redemption</li>
+                                                                            <li>Cannot be exchanged for cash</li>
+                                                                            <li>Subject to availability</li>                                                                        </ul>
+
+                                                                        <a href="#" class="text-primary">Read Terms & Conditions</a>
+
+                                                                        <!-- <span>{{ reward.points_needed }}</span> is used for the points needed to earn. Using django  -->
+                                                                        <p class="text-muted mt-2">
+                                                                            Earn <!-- <span>{{ reward.points_needed }}</span> --> more points to unlock this reward
+                                                                        </p>
+                                                                        <button class="btn btn-secondary w-100 mt-3" disabled>
+                                                                            <i class="bi bi-lock"></i> Earn Points
+                                                                        </button>
+
+                                                                     </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Claim</button>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                </div>
+                                <!-- Reward 3 end -->
+
+                                <!-- Reward 4 -->
+                                <div class="card">
+                                    <img src="img/Flower_seeds.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#Rewards4">
+                                                <i class="bi bi-lock"></i> Earn <!-- <span>{{ reward.points_needed }}</span> --> more points
+                                            </button>
+                                        </div>
+                                </div>
+                                <div class="modal fade" id="Rewards4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Flower Seed Pack</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 1 on clicking the trigger button modal-->
+                                                        <div class="modal-body"> 
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <!-- Left Image -->
+                                                                    <div class="col-md-5 text-center">
+                                                                        <img src="img/Flower_seeds.png" class="img-fluid rounded" alt="">
+                                                                    </div>
+
+                                                                    <!-- Right Content -->
+                                                                     <div class="col-md-7">
+                                                                        <h5>&#127793; 45 Ecopoints</h5>
+
+                                                                        <h6 class="mt-3 fw-bold">About the reward</h6>
+                                                                        <p>
+                                                                            Redeem this reward to receive a premium selection of vibrant flower seeds including varieties like Sunflower, Petunia, and Marigold. Grow beautiful blooms that enhance your surroundings and support pollinators like bees and butterflies.
+                                                                        </p>
+                                                                        <h6>Key Terms & conditions</h6>
+                                                                        <ul>
+                                                                            <li>Valid for one-time redemption</li>
+                                                                            <li>Cannot be exchanged for cash</li>
+                                                                            <li>Subject to availability</li>
+                                                                        </ul>
+
+                                                                        <a href="#" class="text-primary">Read Terms & Conditions</a>
+
+                                                                        <!-- <span>{{ reward.points_needed }}</span> is used for the points needed to earn. Using django  -->
+                                                                        <p class="text-muted mt-2">
+                                                                            Earn <!-- <span>{{ reward.points_needed }}</span> --> more points to unlock this reward
+                                                                        </p>
+                                                                        <button class="btn btn-secondary w-100 mt-3" disabled>
+                                                                            <i class="bi bi-lock"></i> Earn Points
+                                                                        </button>
+
+                                                                     </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Claim</button>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                </div>
+                                
+                                <!-- Reward 5 -->
+                                <div class="card">
+                                    <img src="img/Eco_bag.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#Reward5">
+                                                <i class="bi bi-lock"></i> Earn <!-- <span>{{ reward.points_needed }}</span> --> more points
+                                            </button>
+                                        </div>
+                                </div>
+                                <div class="modal fade" id="Reward5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Recycled Handbag</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 1 on clicking the trigger button modal-->
+                                                        <div class="modal-body"> 
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <!-- Left Image -->
+                                                                    <div class="col-md-5 text-center">
+                                                                        <img src="img/Eco_bag.png" class="img-fluid rounded" alt="">
+                                                                    </div>
+
+                                                                    <!-- Right Content -->
+                                                                     <div class="col-md-7">
+                                                                        <h5>&#127793; 50 Ecopoints</h5>
+
+                                                                        <h6 class="mt-3 fw-bold">About the reward</h6>
+                                                                        <p>
+                                                                            Redeem this reward to receive an eco-friendly recycled handbag made from sustainable materials. Carry your essentials while reducing plastic usage and supporting a cleaner, greener planet.
+                                                                        </p>
+                                                                        <h6>Key Terms & conditions</h6>
+                                                                        <ul>
+                                                                            <li>Valid for one-time redemption</li>
+                                                                            <li>Cannot be exchanged for cash</li>
+                                                                            <li>Subject to availability</li>
+                                                                            <li>Design/color may vary</li>
+                                                                        </ul>
+
+                                                                        <a href="#" class="text-primary">Read Terms & Conditions</a>
+
+                                                                        <!-- <span>{{ reward.points_needed }}</span> is used for the points needed to earn. Using django  -->
+                                                                        <p class="text-muted mt-2">
+                                                                            Earn <!-- <span>{{ reward.points_needed }}</span> --> more points to unlock this reward
+                                                                        </p>
+                                                                        <button class="btn btn-secondary w-100 mt-3" disabled>
+                                                                            <i class="bi bi-lock"></i> Earn Points
+                                                                        </button>
+
+                                                                     </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Claim</button>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                </div>
+                                <!-- Reward 5 end-->
+
+                            </div>
+                            <!-- Reward Slider End -->
+
+                            <!-- SlideRight Button -->
+                            <button class="slider-btn right" onclick="slideRight()">&#10095;</button>
+                        </div>
+                    <!-- EcoPoints 15 - 50 end -->
+
+                    <hr>
+
+                    <!-- EcoPoints: 50 - 150 -->
+                        <div class="d-flex justify-content-between">
+                            <h4>&#127793; EcoPoints: 50 - 150</h4>
+
+                            <!-- Progress bar  -->
+                            <!-- <div class="progress-container">
+                                <div class="progress-text">
+                                    <span>Your Points: 120 / 150</span>
+                                    <span>80%</span>
+                                </div>
+
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 80%;"></div>
+                                </div>
+                            </div> -->
+
+                            <button type="button" class="btn btn-success ms-3">View all</button>
+                        </div>
+                        <!-- Rewards slider for Ecopoints: 50 - 150 -->
+                        <div class="slider-container">
+                            <!-- SlideLeft Button -->
+                            <button class="slider-btn left" onclick="slideLeft()">&#10094;</button>
+                            <!-- Reward Slider -->
+                            <div class="slider" id="slider">
+
+                                <!-- Reward 6 -->
+                                <div class="card">
+                                    <img src="img/Herbal_seeds.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#Reward6">
+                                                <i class="bi bi-lock"></i> Earn <!-- <span>{{ reward.points_needed }}</span> --> more points
+                                            </button>
+                                            
+                                        </div>
+                                </div>
+                                <div class="modal fade" id="Reward6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Herbal Seed Kit</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 1 on clicking the trigger button modal-->
+                                                        <div class="modal-body"> 
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <!-- Left Image -->
+                                                                    <div class="col-md-5 text-center">
+                                                                        <img src="img/Herbal_seeds.png" class="img-fluid rounded" alt="">
+                                                                    </div>
+
+                                                                    <!-- Right Content -->
+                                                                     <div class="col-md-7">
+                                                                        <h5>&#127793; 50 Ecopoints</h5>
+
+                                                                        <h6 class="mt-3 fw-bold">About the reward</h6>
+                                                                        <p>
+                                                                            Redeem this reward to receive a complete herbal seed kit featuring popular herbs like Basil, Mint, Coriander, and Tulsi. Grow your own fresh, chemical-free herbs at home and enjoy a healthier, sustainable lifestyle.
+                                                                        </p>
+                                                                        <h6>Key Terms & conditions</h6>
+                                                                        <ul>
+                                                                            <li>Valid for one-time redemption</li>
+                                                                            <li>Cannot be exchanged for cash</li>
+                                                                            <li>Subject to availability</li>
+                                                                        </ul>
+
+                                                                        <a href="#" class="text-primary">Read Terms & Conditions</a>
+
+                                                                        <!-- <span>{{ reward.points_needed }}</span> is used for the points needed to earn. Using django  -->
+                                                                        <p class="text-muted mt-2">
+                                                                            Earn <!-- <span>{{ reward.points_needed }}</span> --> more points to unlock this reward
+                                                                        </p>
+                                                                        <button class="btn btn-secondary w-100 mt-3" disabled>
+                                                                            <i class="bi bi-lock"></i> Earn Points
+                                                                        </button>
+
+                                                                     </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Claim</button>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                </div>
+                                <!-- Reward 6 end -->
+
+                                <!-- Reward 7 -->
+                                <div class="card">
+                                    <img src="img/Vegetable_seeds.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#Reward7">
+                                                <i class="bi bi-lock"></i> Earn <!-- <span>{{ reward.points_needed }}</span> --> more points
+                                            </button>
+                                            
+                                        </div>
+                                </div>
+                                <div class="modal fade" id="Reward7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Vegetable Seed Pack</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 1 on clicking the trigger button modal-->
+                                                        <div class="modal-body"> 
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <!-- Left Image -->
+                                                                    <div class="col-md-5 text-center">
+                                                                        <img src="img/Vegetable_seeds.png" class="img-fluid rounded" alt="">
+                                                                    </div>
+
+                                                                    <!-- Right Content -->
+                                                                     <div class="col-md-7">
+                                                                        <h5>&#127793; 55 Ecopoints</h5>
+
+                                                                        <h6 class="mt-3 fw-bold">About the reward</h6>
+                                                                        <p>
+                                                                            Redeem this reward to receive a pack of fresh vegetable seeds such as Tomato, Spinach, Carrot, and Chili. Grow your own nutritious vegetables at home and take a step towards a healthier and more sustainable lifestyle.
+                                                                        </p>
+                                                                        <h6>Key Terms & conditions</h6>
+                                                                        <ul>
+                                                                            <li>Valid for one-time redemption</li>
+                                                                            <li>Cannot be exchanged for cash</li>
+                                                                            <li>Subject to availability</li>
+                                                                        </ul>
+
+                                                                        <a href="#" class="text-primary">Read Terms & Conditions</a>
+
+                                                                        <!-- <span>{{ reward.points_needed }}</span> is used for the points needed to earn. Using django  -->
+                                                                        <p class="text-muted mt-2">
+                                                                            Earn <!-- <span>{{ reward.points_needed }}</span> --> more points to unlock this reward
+                                                                        </p>
+                                                                        <button class="btn btn-secondary w-100 mt-3" disabled>
+                                                                            <i class="bi bi-lock"></i> Earn Points
+                                                                        </button>
+
+                                                                     </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Claim</button>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                </div>
+                                <!-- Reward 7 end -->
+
+                                <!-- Reward 8 -->
+                                <div class="card">
+                                    <img src="img/Eco_pen.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#Reward8">
+                                                <i class="bi bi-lock"></i> Earn <!-- <span>{{ reward.points_needed }}</span> --> more points
+                                            </button>
+                                            
+                                        </div>
+                                </div>
+                                <div class="modal fade" id="Reward8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">6 Eco-friendly Pens</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 1 on clicking the trigger button modal-->
+                                                        <div class="modal-body"> 
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <!-- Left Image -->
+                                                                    <div class="col-md-5 text-center">
+                                                                        <img src="img/Eco_pen.png" class="img-fluid rounded" alt="">
+                                                                    </div>
+
+                                                                    <!-- Right Content -->
+                                                                     <div class="col-md-7">
+                                                                        <h5>&#127793; 60 Ecopoints</h5>
+
+                                                                        <h6 class="mt-3 fw-bold">About the reward</h6>
+                                                                        <p>
+                                                                            Redeem this reward to get eco-friendly stationery pens made from recycled materials. 
+                                                                            A perfect sustainable choice for your everyday writing while helping reduce plastic waste.
+                                                                        </p>
+                                                                        <h6>Key Terms & conditions</h6>
+                                                                        <ul>
+                                                                            <li>Valid for one-time redemption</li>
+                                                                            <li>Cannot be exchanged for cash</li>
+                                                                            <li>Subject to availability</li>
+                                                                        </ul>
+
+                                                                        <a href="#" class="text-primary">Read Terms & Conditions</a>
+
+                                                                        <!-- <span>{{ reward.points_needed }}</span> is used for the points needed to earn. Using django  -->
+                                                                        <p class="text-muted mt-2">
+                                                                            Earn <!-- <span>{{ reward.points_needed }}</span> --> more points to unlock this reward
+                                                                        </p>
+                                                                        <button class="btn btn-secondary w-100 mt-3" disabled>
+                                                                            <i class="bi bi-lock"></i> Earn Points
+                                                                        </button>
+
+                                                                     </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Claim</button>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                </div>
+                                <!-- Reward 8 end -->
+
+                                <!-- Reward 9 -->
+                                <div class="card">
+                                    <img src="img/Eco_notebooks.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#Reward9">
+                                                <i class="bi bi-lock"></i> Earn <!-- <span>{{ reward.points_needed }}</span> --> more points
+                                            </button>
+                                            
+                                        </div>
+                                </div>
+                                <div class="modal fade" id="Reward9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">1 Eco-friendly Notebook</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 1 on clicking the trigger button modal-->
+                                                        <div class="modal-body"> 
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <!-- Left Image -->
+                                                                    <div class="col-md-5 text-center">
+                                                                        <img src="img/Eco_notebooks.png" class="img-fluid rounded" alt="">
+                                                                    </div>
+
+                                                                    <!-- Right Content -->
+                                                                     <div class="col-md-7">
+                                                                        <h5>&#127793; 65 Ecopoints</h5>
+
+                                                                        <h6 class="mt-3 fw-bold">About the reward</h6>
+                                                                        <p>
+                                                                            Redeem this reward to get an eco-friendly notebook made from 100% recycled paper. 
+                                                                            Perfect for notes, journaling, and daily use while supporting a greener planet.
+
+                                                                        </p>
+                                                                        <h6>Key Terms & conditions</h6>
+                                                                        <ul>
+                                                                            <li>Valid for one-time redemption</li>
+                                                                            <li>Cannot be exchanged for cash</li>
+                                                                            <li>Subject to availability</li>
+                                                                        </ul>
+
+                                                                        <a href="#" class="text-primary">Read Terms & Conditions</a>
+
+                                                                        <!-- <span>{{ reward.points_needed }}</span> is used for the points needed to earn. Using django  -->
+                                                                        <p class="text-muted mt-2">
+                                                                            Earn <!-- <span>{{ reward.points_needed }}</span> --> more points to unlock this reward
+                                                                        </p>
+                                                                        <button class="btn btn-secondary w-100 mt-3" disabled>
+                                                                            <i class="bi bi-lock"></i> Earn Points
+                                                                        </button>
+
+                                                                     </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Claim</button>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                </div>
+                                <!-- Reward 9 end -->
+                                
+                                <!-- Reward 10 -->
+                                <div class="card">
+                                    <img src="img/Compost_kit.png" class="card-img" alt="">
+                                        <div class="card-img-overlay">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#Reward10">
+                                                <i class="bi bi-lock"></i> Earn <!-- <span>{{ reward.points_needed }}</span> --> more points
+                                            </button>
+                                            
+                                        </div>
+                                </div>
+                                <div class="modal fade" id="Reward10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Plant Sapling</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <!-- To give description about the reward 1 on clicking the trigger button modal-->
+                                                        <div class="modal-body"> 
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <!-- Left Image -->
+                                                                    <div class="col-md-5 text-center">
+                                                                        <img src="img/Compost_kit.png" class="img-fluid rounded" alt="">
+                                                                    </div>
+
+                                                                    <!-- Right Content -->
+                                                                     <div class="col-md-7">
+                                                                        <h5>&#127793; 150 Ecopoints</h5>
+
+                                                                        <h6 class="mt-3 fw-bold">About the reward</h6>
+                                                                        <p>
+                                                                            Redeem this reward to get a compost kit and turn your kitchen waste into nutrient-rich compost. 
+                                                                            A simple step towards reducing waste and creating a healthier environment.
+                                                                        </p>
+                                                                        <h6>Key Terms & conditions</h6>
+                                                                        <ul>
+                                                                            <li>Valid for one-time redemption</li>
+                                                                            <li>Cannot be exchanged for cash</li>
+                                                                            <li>Subject to availability</li>
+                                                                        </ul>
+
+                                                                        <a href="#" class="text-primary">Read Terms & Conditions</a>
+
+                                                                        <!-- <span>{{ reward.points_needed }}</span> is used for the points needed to earn. Using django  -->
+                                                                        <p class="text-muted mt-2">
+                                                                            Earn <!-- <span>{{ reward.points_needed }}</span> --> more points to unlock this reward
+                                                                        </p>
+                                                                        <button class="btn btn-secondary w-100 mt-3" disabled>
+                                                                            <i class="bi bi-lock"></i> Earn Points
+                                                                        </button>
+
+                                                                     </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Claim</button>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                </div>
+                                <!-- Reward 10 end -->
+
+                            </div>
+                            <!-- Reward Slider End -->
+
+                            <!-- SlideRight Button -->
+                            <button class="slider-btn right" onclick="slideRight()">&#10095;</button>
+                        </div>
+
+                    <!-- EcoPoints 50 - 150 end -->
+
+                    <hr>
+                
+                    <!-- Ecopoints: 150 & above -->
+
+                    <!-- EcoPoints 150 & above end -->
+
+
+                <!-- Leaderboard -->
+                <!-- Leaderboard header -->
+                <div class="row mt-5">
+                    <div class="text-white text-center p-5 eco-leader">
+                        <h1>Leaderboard</h1>
+                    </div>
+
+                    <!-- Top ranking leaderboard -->
+                    <div class="col-xl-6">
+                        <div class="page_title-content">
+                            <h3>Top Ranking <span class="text-uppercase text-success bg-light px-2">Harit sainik</span></h3>
+                        </div>
+                    </div>
+
+                    <!-- tabs for alltime , month and week leaders -->
+                    <div class="col-xl-6">
+                        <div class="leaderboard_tab_link">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item border-end border-2">
+                                    <a href="#" aria-current="page" class="router-link-active router-link-exact-active nav-link active" data-bs-toggle="tab">All Time</a>
+                                </li>
+                                <li class="nav-item border-end border-2">
+                                    <a href="#" aria-current="page" class="router-link-active router-link-exact-active nav-link" data-bs-toggle="tab">Week</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" aria-current="page" class="router-link-active router-link-exact-active nav-link" data-bs-toggle="tab">Month</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Leaderboard heading end-->
+
+                <!-- Leaderboard Content-->
+                <div class="leaderboard">
+                    <div class="container">
+                        <!-- Toatal leaderboard container -->
+                        <div class="row">
+
+                            <!-- Half for top rankers -->
+                            <div class="col-xl-6">
+                                <div class="leaderboard-top-rank">
+                                    <!-- Top rankers -->
+                                    <div class="top_rank">
+                                        <!-- Rank 1 -->
+                                        <div class="d-flex crown rank_ani1">
+                                            <!-- Crown -->
+                                            <div class="rank_icon">
+                                            <img src="img/crown.png" alt="" style="height: 36.27; width: 43.71px;">
+                                            </div>
+                                            <!-- Info -->
+                                            <div class="flex-grow-1">
+                                                <span class="circle"></span>
+                                                <h6>Harit Sainik 1</h6>
+                                                <h5>Riya Sharma</h5>
+                                                <p>Pune</p>
+                                            </div>
+                                            <!-- Ecopoints -->
+                                            <div class="prize">
+                                                <h4>500&#127793;</h4>
+                                            </div>
+                                        </div>
+
+                                        <!-- Rank 2 -->
+                                        <div class="d-flex cup rank_ani2">
+                                            <!-- Trophy -->
+                                            <div class="rank_icon">
+                                                <img src="img/trophy.png" alt="" style="height: 36.27; width: 43.71px;">
+                                            </div>
+                                            <!-- Info -->
+                                            <div class="flex-grow-1">
+                                                <span class="circle"></span>
+                                                <h6>Harit Sainik 2</h6>
+                                                <h5>Amit Kumar</h5>
+                                                <p>Nashik</p>
+                                            </div>
+                                            <!-- Ecopoints -->
+                                            <div class="prize">
+                                                <h4>460&#127793;</h4>
+                                            </div>
+                                        </div>
+
+                                        <!-- Rank 3 -->
+                                        <div class="d-flex medal rank_ani2">
+                                            <!-- Medal -->
+                                            <div class="rank_icon">
+                                                <img src="img/medal.png" alt="" style="height: 36.27; width: 43.71px;">
+                                            </div>
+                                            <!-- Info -->
+                                            <div class="flex-grow-1">
+                                                <span class="circle"></span>
+                                                <h6>Harit Sainik 3</h6>
+                                                <h5>Geeta Jain</h5>
+                                                <p>Mumbai</p>
+                                            </div>
+                                            <!-- Ecopoints -->
+                                            <div class="prize">
+                                                <h4>380&#127793;</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Half for top rankers end -->
+
+                            <!-- Half for board -->
+                            <div class="col-xl-6">
+                                <div class="leaderboard_content">
+                                    <div class="leaderboard_tab">
+                                        <div class="tab_content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="alltime">
+                                                <div class="table-responsive">
+                                                    <!-- Leaderboard table -->
+                                                    <table class="table">
+
+                                                        <!-- Table heade -->
+                                                        <thead>
+                                                            <tr>
+                                                                <!-- Headers - column names -->
+                                                                <th scope="col">Rank</th>
+                                                                <th scope="col">Name</th>
+                                                                <th scope="col">EcoPoints &#127793;</th>
+                                                            </tr>
+                                                        </thead>
+
+                                                        <!-- Table body -->
+                                                        <tbody>
+                                                            <!-- 1st row -->
+                                                            <tr>
+                                                                <th scope="row">4</th>
+                                                                <td class="user_circle">
+                                                                    <span class="circle user1"></span>
+                                                                    <span>Raj Mane</span>
+                                                                </td>
+                                                                <td>350</td>
+                                                            </tr>
+
+                                                            <!-- 2nd row -->
+                                                            <tr>
+                                                                <th scope="row">5</th>
+                                                                <td class="user_circle">
+                                                                    <span class="circle user1"></span>
+                                                                    <span>Aditi Sharma</span>
+                                                                </td>
+                                                                <td>320</td>
+                                                            </tr>
+
+                                                            <!-- 3rd row -->
+                                                            <tr>
+                                                                <th scope="row">6</th>
+                                                                <td class="user_circle">
+                                                                    <span class="circle user1"></span>
+                                                                    <span>Priya Nair</span>
+                                                                </td>
+                                                                <td>20</td>
+                                                            </tr>
+
+                                                            <!-- 4th row -->
+                                                            <tr>
+                                                                <th scope="row">7</th>
+                                                                <td class="user_circle">
+                                                                    <span class="circle user1"></span>
+                                                                    <span>Raj Mane</span>
+                                                                </td>
+                                                                <td>240</td>
+                                                            </tr>
+
+                                                            <!-- 5th row -->
+                                                            <tr>
+                                                                <th scope="row">8</th>
+                                                                <td class="user_circle">
+                                                                    <span class="circle user1"></span>
+                                                                    <span>Kavya Reddy</span>
+                                                                </td>
+                                                                <td>200</td>
+                                                            </tr>
+
+                                                            <!-- 6th row -->
+                                                            <tr>
+                                                                <th scope="row">9</th>
+                                                                <td class="user_circle">
+                                                                    <span class="circle user1"></span>
+                                                                    <span>Manish Gupta</span>
+                                                                </td>
+                                                                <td>190</td>
+                                                            </tr>
+
+                                                            <!-- 7th row -->
+                                                            <tr>
+                                                                <th scope="row">10</th>
+                                                                <td class="user_circle">
+                                                                    <span class="circle user1"></span>
+                                                                    <span>Ramesh Iyer</span>
+                                                                </td>
+                                                                <td>170</td>
+                                                            </tr>
+
+                                                        </tbody>
+
+                                                    </table>
+                                                    <!-- table end -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="load_more">
+                                        <a href="#">Load More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Leaderboard Content end -->
+        </div>  
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <a href="index.html" class="d-inline-block mb-3">
+                        <h1 class="text-white">HARIT SENA</h1>
+                    </a>
+                    <p class="mb-0"></p>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="text-white mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>GK AARKCON, Gaikwad Nagar, Punawale, Pune</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+91 9774948729</p>
+                    <p><i class="fa fa-envelope me-3"></i>haritsena2325@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">Popular Link</h5>
+                    <a class="btn btn-link" href="#!">About Us</a>
+                    <a class="btn btn-link" href="#!">Contact Us</a>
+                    <a class="btn btn-link" href="#!">Privacy Policy</a>
+                    <a class="btn btn-link" href="#!">Terms & Condition</a>
+                    <a class="btn btn-link" href="#!">Initiatives</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <a class="btn btn-link" href="#!">♻️ Waste Collection</a>
+                    <a class="btn btn-link" href="#!">🏆 Reward Program</a>
+                    <a class="btn btn-link" href="#!">🌱 Tree Plantation</a>
+                    <a class="btn btn-link" href="#!">📜 Volunteer Certification</a>
+                    <a class="btn btn-link" href="#!">🧹 Cleanliness Drives</a>
+                    <a class="btn btn-link" href="#!">📢 Awareness Campaigns</a>
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#!">HARIT SENA</a>, All Right Reserved.
+
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>. Distributed by
+                        <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="#!">Home</a>
+                            <a href="#!">Cookies</a>
+                            <a href="#!">Help</a>
+                            <a href="#!">FAQs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#!" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/Leaderboard.js"></script>
+</body>
+</html>
