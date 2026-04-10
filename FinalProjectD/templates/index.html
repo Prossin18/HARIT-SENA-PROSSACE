@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +10,7 @@
     <meta content="Harit Sena (Green Army) is a volunteer-driven environmental movement focused on tree plantation, forest conservation, and spreading awareness about sustainable living. Join us in building a greener future." name="description">
 
     <!-- Favicon -->
-    <link href="img/harit_sena_logo.png" rel="icon">
+    <link href="{% static 'img/harit_sena_logo.png' %}" rel="icon">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -24,14 +25,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css'%}" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
 </head>
 
 <body>
@@ -49,7 +50,7 @@
     <div class="container-fluid sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light border-bottom border-2 border-white">
-                <a href="index.html" class="navbar-brand">
+                <a href="{% url 'index'%}" class="navbar-brand">
                     <h1 class="text-success fw-bold">Harit Sena</h1>
                 </a>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
@@ -58,10 +59,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>                            
-                        <a href="Leaderboard.html" class="nav-item nav-link">Rewards</a>                                                                                    
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="{% url 'index' %}" class="nav-item nav-link active">Home</a>
+                        <a href="{% url 'about'%}" class="nav-item nav-link">About</a>                            
+                        <a href="{% url 'rewards'%}" class="nav-item nav-link">Rewards</a>                                                                                    
+                        <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
                         <div class="nav-item dropdown">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button"
@@ -69,10 +70,10 @@
                                 <i class="bi bi-person-circle fs-4"></i>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accountDropdown">
-                                <li><a class="dropdown-item" href="Login.html">Login</a></li>
-                                <li><a class="dropdown-item" href="register.html">Sign Up</a></li>
+                                <li><a class="dropdown-item" href="{% url 'login'%}">Login</a></li>
+                                <li><a class="dropdown-item" href="{% url 'register'%}">Sign Up</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="Profile.html">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
                                 </ul>
                             </li>
                         </div>
@@ -182,7 +183,7 @@
                         
                             </div> -->
                             <div>
-                                 <a href="pick-req.html">
+                                 <a href="{% url 'pickreq'%}">
                                     <button class="btn impact-btn primary" id="log-in">Request A Pickup</button>
                                 </a>
                             </div>
@@ -194,9 +195,9 @@
                 <!-- Half part slider start -->
                 <div class="col-lg-6">
                     <div class="owl-carousel header-carousel animated fadeIn">
-                        <img class="img-fluid rounded-3" src="img/Img1.png" alt="">
-                        <img class="img-fluid rounded-3" src="img/Img2.png" alt="">
-                        <img class="img-fluid rounded-3" src="img/Img3.png" alt="">
+                        <img class="img-fluid rounded-3" src="{% static 'img/Img1.png' %}" alt="">
+                        <img class="img-fluid rounded-3" src="{% static 'img/Img2.png' %}" alt="">
+                        <img class="img-fluid rounded-3" src="{% static 'img/Img3.png' %}" alt="">
                     </div>
                 </div>
                 <!-- Half part slider end -->
@@ -301,13 +302,13 @@
                         <!-- Image 1 -->
                         <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="what-we-do">
-                                <img class="img-fluid rounded" src="img/Community waste.png" alt="Waste Collection Image">
+                                <img class="img-fluid rounded" src="{% static 'img/Community waste.png' %}" alt="Waste Collection Image">
                             </div>
                         </div>
                         <!-- Image 2 -->
                         <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
                             <div class="what-we-do">
-                                <img class="img-fluid rounded" src="img/Leaderboard.png" alt="Community Drive Image">
+                                <img class="img-fluid rounded" src="{% static 'img/Leaderboard.png'%}" alt="Community Drive Image">
                             </div>
                         </div>
 
@@ -422,7 +423,7 @@
                         <!-- Initiative 1 -->
                         <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.2s">
                             <div class="project-item position-relative overflow-hidden">
-                                <img src="img/Tree-planting.png" class="img-fluid w-100" alt="Tree Plantation">
+                                <img src="{% static 'img/Tree-planting.png'%}" class="img-fluid w-100" alt="Tree Plantation">
                                 <a class="project-overlay text-decoration-none" href="#!">
                                     <h4 class="text-white">Tree Plantation</h4>
                                     <!-- <small class="text-white">120 Trees Planted</small> -->
@@ -433,7 +434,7 @@
                         <!-- Initiative 2 -->
                         <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
                             <div class="project-item position-relative overflow-hidden">
-                                <img src="img/clean-up.png" class="img-fluid w-100" alt="Clean Up">
+                                <img src="{% static 'img/clean-up.png' %}" class="img-fluid w-100" alt="Clean Up">
                                 <a class="project-overlay text-decoration-none" href="#!">
                                     <h4 class="text-white">Clean-Up Drive</h4>
                                     <!-- <small class="text-white">85 Areas Cleaned</small> -->
@@ -444,7 +445,7 @@
                         <!-- Initiative 3 -->
                         <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.4s">
                             <div class="project-item position-relative overflow-hidden">
-                                <img class="img-fluid w-100 h-50" src="img/Plastic-campaign.png" alt="Plastic-Free Campaign">
+                                <img class="img-fluid w-100 h-50" src="{% static 'img/Plastic-campaign.png'%}" alt="Plastic-Free Campaign">
                                 <a class="project-overlay text-decoration-none" href="#!">
                                     <h4 class="text-white">Plastic-Free Campaign</h4>
                                     <!-- <small class="text-white">200 Participants</small> -->
@@ -489,7 +490,7 @@
                         <div class="col-md-6 wow fadeIn" data-wow-delay="0.2s">
                             <div class="service-item h-100 d-flex flex-column justify-content-center bg-primary">
                                 <a href="#!" class="service-img position-relative mb-4">
-                                    <img class="img-fluid w-100" src="img/Waste segregation.png" alt="">
+                                    <img class="img-fluid w-100" src="{% static 'img/Waste segregation.png'%}" alt="">
                                     <h5>Waste Segregation<br>Awareness</h5>
                                 </a>
                                 <p class="mb-0">Promoting proper waste segregation for a cleaner environment.</p>
@@ -500,7 +501,7 @@
                         <div class="col-md-6 wow fadeIn" data-wow-delay="0.4s">
                             <div class="service-item h-100 d-flex flex-column justify-content-center bg-light">
                                 <a href="#!" class="service-img position-relative mb-4">
-                                    <img class="img-fluid w-100" src="img/Plastic-free campaign.png" alt="">
+                                    <img class="img-fluid w-100" src="{% static 'img/Plastic-free campaign.png'%}" alt="">
                                     <h5>Plastic-Free<br>Campaign</h5>
                                 </a>
                                 <p class="mb-0">Encouraging reduction of single-use plastics.</p>
@@ -511,7 +512,7 @@
                         <div class="col-md-6 wow fadeIn" data-wow-delay="0.6s">
                             <div class="service-item h-100 d-flex flex-column justify-content-center bg-light">
                                 <a href="#!" class="service-img position-relative mb-4">
-                                    <img class="img-fluid w-100" src="img/Green rewards.png" alt="">
+                                    <img class="img-fluid w-100" src="{% static 'img/Green rewards.png'%}" alt="">
                                     <h5>Green Rewards</h5>
                                 </a>
                                 <p class="mb-0">Earn points and recognition for eco-friendly actions.</p>
@@ -522,7 +523,7 @@
                         <div class="col-md-6 wow fadeIn" data-wow-delay="0.8s">
                             <div class="service-item h-100 d-flex flex-column justify-content-center bg-primary">
                                 <a href="#!" class="service-img position-relative mb-4">
-                                    <img class="img-fluid w-100" src="img/Leaderboard service.png" alt="">
+                                    <img class="img-fluid w-100" src="{% static 'img/Leaderboard service.png'%}" alt="">
                                     <h5>Leaderboard</h5>
                                 </a>
                                 <p class="mb-0">Highlighting top contributors to inspire participation.</p>
@@ -551,7 +552,7 @@
                             <div class="row g-5 align-items-center">
                                 <div class="col-md-6">
                                     <div class="testimonial-img">
-                                        <img class="img-fluid" src="img/Priya-mehta.png" alt="">
+                                        <img class="img-fluid" src="{% static 'img/Priya-mehta.png' %}" alt="">
                                     </div>
                                 </div>
 
@@ -570,7 +571,7 @@
                             <div class="row g-5 align-items-center">
                                 <div class="col-md-6">
                                     <div class="testimonial-img">
-                                        <img class="img-fluid" src="img/Rohan-kulkarni.png" alt="">
+                                        <img class="img-fluid" src="{% static 'img/Rohan-kulkarni.png'%}" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -588,7 +589,7 @@
                             <div class="row g-5 align-items-center">
                                 <div class="col-md-6">
                                     <div class="testimonial-img">
-                                        <img class="img-fluid" src="img/Sneha.png" alt="">
+                                        <img class="img-fluid" src="{% static 'img/Sneha.png' %}" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -616,7 +617,7 @@
 
                 <!-- Certificate -->
                 <div class="col-md-5 ps-lg-0 text-start wow fadeIn" data-wow-delay="0.2s">
-                    <img class="img-fluid w-100 m-4"  src="img/harit-sainik.png" alt="">
+                    <img class="img-fluid w-100 m-4"  src="{% static 'img/harit-sainik.png'%}" alt="">
                 </div>
 
                 <!-- Start your journey -->
@@ -627,7 +628,7 @@
 
                         <div class="d-grid gap-2 col-6 mx-auto">
                             <!-- Fix Register form dimentions -->
-                            <a href="register.html">
+                            <a href="{% url 'register'%}">
                                 <button class="btn btn-primary btn-lg" type="button">Start your journey</button>
                             </a>
                         </div>
@@ -645,7 +646,7 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                    <a href="index.html" class="d-inline-block mb-3">
+                    <a href="{% url 'index'%}" class="d-inline-block mb-3">
                         <h1 class="text-white">HARIT SENA</h1>
                     </a>
                     <p class="mb-0"></p>
@@ -721,13 +722,13 @@
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="{% static 'lib/wow/wow.min.js'%}"></script>
+    <script src="{% static 'lib/easing/easing.min.js'%}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js'%}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js'%}"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="{%static 'js/main.js'%}"></script>
 </body>
 
 </html>
